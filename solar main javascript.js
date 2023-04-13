@@ -1,0 +1,22 @@
+let text=document.getElementById('text');
+let leaf=document.getElementById('leaf');
+let hill1=document.getElementById('hill1');
+let hill4=document.getElementById('hill4');
+let hill5=document.getElementById('hill5');
+
+window.addEventListener('scroll',() => {
+  let value=window.scrollY;
+
+  text.style.marginTop=value * 2.5 +'px';
+  leaf.style.marginTop=value * -1.5 + 'px';
+  leaf.style.marginLeft=value * 1.5 +'px';
+  hill5.style.left=value *1.5 +'px';
+  hill4.style.left=value*1.5*'px'; 
+});
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
